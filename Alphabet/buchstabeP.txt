@@ -1,0 +1,34 @@
+void schreibP() {
+	//Anfang
+	vor();
+	
+	rechtsUm();
+	for(int i=0; i<6; i++) {
+		gibVoll();
+		vor();
+	}
+	//Rückweg
+	gibVoll();
+	linksUm(); linksUm();
+	for(int j=0; j<6; j++) {
+		vor();
+	}
+	rechtsUm();
+	vor(); gibVoll(); vor(); gibVoll(); vor(); gibVoll(); vor(); gibVoll();
+	rechtsUm();
+	vor(); gibVoll(); vor(); gibVoll(); vor(); gibVoll();
+	rechtsUm();
+	vor(); gibVoll(); vor(); gibVoll(); vor(); gibVoll();
+	
+	//Endpunkt
+	linksUm();
+	linksUm();
+	vor(); vor(); vor(); vor(); 
+	linksUm();
+	vor();	vor();	vor();		
+	rechtsUm();
+	vor();
+	
+	//Ende
+	vor();
+}

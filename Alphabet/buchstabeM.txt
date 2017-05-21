@@ -1,0 +1,48 @@
+void schreibM() {
+	//Anfang
+	vor();
+	
+	rechtsUm();
+		for(int i=0; i<6; i++) {
+		gibVoll();
+		vor();
+	}
+	gibVoll();
+		//Zu anderer Seite
+		linksUm(); vor(); vor(); vor(); vor(); vor(); linksUm();
+	
+	for(int i=0; i<6; i++) {
+		gibVoll();
+		vor();
+	}
+	gibVoll();
+//1.
+	linksUm();
+	vor();
+	linksUm();
+	vor();
+	gibVoll();
+//2.
+	vor();
+	rechtsUm();
+	vor();
+	gibVoll();
+//3.
+	vor();
+	gibVoll();
+//4.
+	rechtsUm();
+	vor();
+	linksUm();
+	vor();
+	gibVoll();
+	
+	//Endpunkt
+	rechtsUm();
+	vor();
+	rechtsUm();
+	vor(); vor(); vor(); vor();
+	
+	//Ende
+	vor();
+}

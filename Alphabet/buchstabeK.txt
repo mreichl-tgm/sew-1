@@ -1,0 +1,49 @@
+void schreibK() {
+	//Anfang
+	vor();
+	
+	rechtsUm();
+	for(int i=0; i<6; i++) {
+		gibVoll();
+		vor();
+	}
+	gibVoll();
+	//Zu Ecke
+	linksUm();
+	for(int j=0; j<5; j++) {
+		vor();
+	}
+	gibVoll();
+	linksUm();
+	vor();
+	linksUm();
+	vor();
+	gibVoll();
+	vor();
+	rechtsUm();
+	vor();
+	gibVoll();
+	vor();
+	linksUm();
+	vor();
+	gibVoll();
+		//Bonus
+		vor();
+		gibVoll();
+		rechtsUm();
+		vor();
+		rechtsUm();
+		vor(); vor();
+	gibVoll();
+	vor();
+	linksUm();
+	vor();
+	gibVoll();
+	vor();
+	rechtsUm();
+	vor();
+	gibVoll();
+	
+	//Ende
+	vor();
+}

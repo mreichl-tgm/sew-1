@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root text="&#34;Au24a&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;import javax.swing.JOptionPane;&#34;" comment="" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;String eingabe =&#34;&#34;&#34;&#34;;&#34;,&#34;String z1= &#34;&#34;&#34;&#34;;&#34;,&#34;String z2= &#34;&#34;&#34;&#34;;&#34;,&#34;String operand =&#34;&#34;&#34;&#34;;&#34;" comment="" color="ffffff" rotated="0"></instruction>
+		<while text="&#34;while (true) {&#34;" comment="" color="ff8000">
+			<qWhile>
+				<instruction text="&#34;eingabe = JOptionPane.showInputDialog(null, &#34;&#34;Text&#34;&#34;);	&#34;" comment="&#34;Bitte geben Sie ihre Rechnung nach diesem Beispiel ein: 1 + 1&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;int pos = eingabe.IndexOf(' ');&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<alternative text="&#34;if (pos == -1) {&#34;" comment="" color="8080ff">
+					<qTrue>
+						<instruction text="&#34;System.out.println(&#34;&#34;Das erste Leerzeichen fehlt!&#34;&#34;);&#34;" comment="&#34;&#34;" color="c0c0c0" rotated="0"></instruction>
+					</qTrue>
+					<qFalse>
+						<alternative text="&#34;if (pos == lastindexOf) {&#34;" comment="&#34;&#34;" color="8080ff">
+							<qTrue>
+								<instruction text="&#34;System.out.println(&#34;&#34;Das zweite Leerzeichen fehlt!&#34;&#34;);&#34;" comment="&#34;&#34;" color="c0c0c0" rotated="0"></instruction>
+							</qTrue>
+							<qFalse>
+								<alternative text="&#34;if ((pos - lastindexOf) &#62; 2) {&#34;" comment="&#34;&#34;" color="8080ff">
+									<qTrue>
+										<instruction text="&#34;System.out.println(&#34;&#34;Zu viele Leerzeichen oder Rechenoperatoren!&#34;&#34;);&#34;" comment="&#34;&#34;" color="c0c0c0" rotated="0"></instruction>
+									</qTrue>
+									<qFalse>
+										<case text="&#34;try {&#34;,&#34;&#34;,&#34;catch (NumberFormatException) {&#34;,&#34;catch (Exception) {&#34;" comment="" color="8080ff">
+											<qCase>
+												<instruction text="&#34;z1 = eingabe.Substring(0, pos);&#34;,&#34;z2 = eingabe.Substring(eingabe.lastindexOf(' ');&#34;" comment="&#34;&#34;" color="ff8000" rotated="0"></instruction>
+												<case text="&#34;switch (eingabe.charAt(pos+1)) {&#34;,&#34;case '+':&#34;,&#34;case '-':&#34;,&#34;case '*':&#34;,&#34;case 'x':&#34;,&#34;case '.':&#34;,&#34;case '/':&#34;,&#34;case ':':&#34;,&#34;case '%':&#34;,&#34;default :&#34;" comment="" color="ff8000">
+													<qCase>
+														<instruction text="&#34;System.out.println(&#34;&#34;&#34;&#34;+z1.parseInt() + z2.parseInt()+&#34;&#34;&#34;&#34;);&#34;,&#34;break;&#34;" comment="" color="80ff80" rotated="0"></instruction>
+													</qCase>
+													<qCase>
+														<instruction text="&#34;System.out.println(&#34;&#34;&#34;&#34;+z1.parseInt() - z2.parseInt()+&#34;&#34;&#34;&#34;);&#34;,&#34;break;&#34;" comment="" color="ff8080" rotated="0"></instruction>
+													</qCase>
+													<qCase>
+													</qCase>
+													<qCase>
+													</qCase>
+													<qCase>
+														<instruction text="&#34;System.out.println(&#34;&#34;&#34;&#34;+z1.parseInt() * z2.parseInt()+&#34;&#34;&#34;&#34;);&#34;,&#34;break;&#34;" comment="" color="ffff80" rotated="0"></instruction>
+													</qCase>
+													<qCase>
+													</qCase>
+													<qCase>
+														<instruction text="&#34;System.out.println(&#34;&#34;&#34;&#34;+z1.parseInt() / z2.parseInt()+&#34;&#34;&#34;&#34;);&#34;,&#34;break;&#34;" comment="" color="80ffff" rotated="0"></instruction>
+													</qCase>
+													<qCase>
+														<instruction text="&#34;System.out.println(&#34;&#34;&#34;&#34;+z1.parseInt() % z2.parseInt()+&#34;&#34;&#34;&#34;);&#34;,&#34;break;&#34;" comment="" color="0080ff" rotated="0"></instruction>
+													</qCase>
+													<qCase>
+														<instruction text="&#34;System.Out.Println(&#34;&#34;Kein uns bekannter Operator!&#34;&#34;);&#34;" comment="" color="c0c0c0" rotated="0"></instruction>
+													</qCase>
+												</case>
+											</qCase>
+											<qCase>
+												<instruction text="&#34;System.out.println(&#34;&#34;Nicht Numerisch!&#34;&#34;);&#34;" comment="" color="c0c0c0" rotated="0"></instruction>
+											</qCase>
+											<qCase>
+												<instruction text="&#34;System.out.println(&#34;&#34;Eingabe Unzulässig!&#34;&#34;);&#34;" comment="" color="c0c0c0" rotated="0"></instruction>
+											</qCase>
+										</case>
+									</qFalse>
+								</alternative>
+							</qFalse>
+						</alternative>
+					</qFalse>
+				</alternative>
+			</qWhile>
+		</while>
+	</children>
+</root>
